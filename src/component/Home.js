@@ -24,7 +24,7 @@ const Home = () => {
     }
     return (
         <div style={{"text-align": "center", color:"#873600"}}>
-            <h1 style={{color:"Black"}}><b>Rishabh Pant</b> replaces to <b>Sanju Samson</b></h1>
+            <h1 style={{color:"Black"}}><b>Sanju Samson</b> replaces to <b>Rishabh Pant</b></h1>
             <h2>Name: {cricketer['name']}</h2>
             <h2>Age: {cricketer['age']}</h2>
             <h2>Role: {cricketer['Role']}</h2>
