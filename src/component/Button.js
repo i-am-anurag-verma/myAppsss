@@ -2,9 +2,9 @@ import React from 'react'
 
 const Button = (props) => {
   return (
-    <div>
-        {props.Button}
-    </div>
+    <div className="form-group">
+            <button type="submit" className="btn btn-primary btn-lg">{props.children}</button>
+        </div>
   )
 }
 
