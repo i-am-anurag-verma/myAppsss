@@ -23,7 +23,7 @@ const Home = () => {
         setCricketer(nextPlayer)
     }
     return (
-        <div style={{"text-align": "center", color:"#873600"}}>
+        <div style={{textAlign: "center", color:"#873600"}}>
             <h1 style={{color:"Black"}}><i>Sanju Samson</i> replaces to <i>Rishabh Pant</i></h1>
             <h2>Name: {cricketer['name']}</h2>
             <h2>Age: {cricketer['age']}</h2>

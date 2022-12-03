@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import Button from './Button';
 import FormElement from './forms/FormElement';
+import InfoText from './forms/InfoText';
 import './Signup.css';
 
 const Signup = () => {
 
 	const [name, setName] = useState('');
+	const [visible, setVisible] = useState(false)
 
 	const handleChange = (event) => {
 		setName(event.target.value)
@@ -65,9 +67,20 @@ const Signup = () => {
 					<div className="form-group">
 						<label className="checkbox-inline"><input type="checkbox" required /> I accept the <a href="/">Terms of Use</a> &amp; <a href="/">Privacy Policy</a></label>
 					</div>
-					<Button>Signup</Button>
+					<div>
+					<Button onClick={()=>setVisible(!visible)}>{visible?'Hide InfoTex':'Show InfoText'}</Button>
+					</div>
+					<div>
+						<Button>Signup</Button>
+					</div>
 				</form>
 				<div className="text-center">Already have an account? <a href="/">Login here</a></div>
+				{visible && (
+					<div>
+					<InfoText/>
+				</div> 
+				)}
+				
 			</div>
 		</div>
 
