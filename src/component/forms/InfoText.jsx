@@ -2,12 +2,13 @@ import React from 'react'
 
 const InfoText = () => {
 
-        React.useEffect(() => {
-          console.log('====mounted');
-          return () => {
-              console.log('====component unmounted')
-          }
-      }, [])  
+       React.useEffect(()=>{
+        console.log("======mounted");
+
+        return(()=>{
+            console.log("===component unmounted")
+        })
+       })
   return (
     <div>
         <p>
