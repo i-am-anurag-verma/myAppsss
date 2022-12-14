@@ -1,15 +1,15 @@
 import React from 'react'
-import Login from './component/Login';
+// import Login from './component/Login';
+// import Signup from './component/Signup';
 import Home from './component/Home';
-import Signup from './component/Signup';
 
 function App() {
   return (
     
     <div>
-      <Login/>
-      <Signup />
       <Home />
+      {/* <Login /> */}
+      {/* <Signup /> */}
     </div>
   );
 }

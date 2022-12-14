@@ -1,24 +1,33 @@
 import React from 'react'
 import { useState } from 'react'
 import Button from './Button'
+import './login.css'
 
-const arr = []
+
+
 const Login = () => {
 
   const [data, setData] = useState()
 
-  const handleOnchange = (event) =>{
-      setData(event.target.value)
+  const handleOnchange = (event) => {
+    setData(event.target.value)
 
-        console.log("========>",event)
+    console.log("========>", event)
   }
-  
+
   return (
-   <div>
-    <label form='name'>Array:</label>
-    <input type="text" name="Array" onChange={(event)=>{handleOnchange(event)}} />   
-    <Button>Submit</Button>
-   </div>
+    <div className='control_login'>
+      <h2>Login to Continue</h2>
+      <div>
+        <label form='name'>Email Id</label>
+        <input type="email" name="email" className='control_input' placeholder='Email Id'/>
+      </div>
+      <div>
+        <label form='name'>Password</label>
+        <input type="password" name="password" className='control_input' placeholder='Password'/>
+      </div>
+      <Button>Submit</Button>
+    </div>
   )
 }
 

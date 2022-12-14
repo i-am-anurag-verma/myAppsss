@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Button from './Button';
 import FormElement from './forms/FormElement';
 import InfoText from './forms/InfoText';
-import './Signup.css';
+import './signup.css';
 
 const Signup = () => {
 
@@ -23,44 +23,44 @@ const Signup = () => {
 					<div className="form-group">
 						<div className="input-group">
 							<FormElement
-							type="text"
-							className="form-control"
-							name="username"
-							placeholder="Username"
-							onChange={(event) => handleChange(event)}
+								type="text"
+								className="form-control"
+								name="username"
+								placeholder="Username"
+								onChange={(event) => handleChange(event)}
 							/>
 						</div>
 					</div>
 					<div className="form-group">
 						<div className="input-group">
 							<FormElement
-							type="email"
-							className="form-control"
-							name="email"
-							placeholder="Email Address"
-							onChange={(event) => handleChange(event)}
+								type="email"
+								className="form-control"
+								name="email"
+								placeholder="Email Address"
+								onChange={(event) => handleChange(event)}
 							/>
 						</div>
 					</div>
 					<div className="form-group">
 						<div className="input-group">
-						<FormElement
-							type="password"
-							className="form-control"
-							name="password"
-							placeholder="Password"
-							onChange={(event) => handleChange(event)}
+							<FormElement
+								type="password"
+								className="form-control"
+								name="password"
+								placeholder="Password"
+								onChange={(event) => handleChange(event)}
 							/>
 						</div>
 					</div>
 					<div className="form-group">
 						<div className="input-group">
-						<FormElement
-							type="password"
-							className="form-control"
-							name="confirm password"
-							placeholder="Confirm Password"
-							onChange={(event) => handleChange(event)}
+							<FormElement
+								type="password"
+								className="form-control"
+								name="confirm password"
+								placeholder="Confirm Password"
+								onChange={(event) => handleChange(event)}
 							/>
 						</div>
 					</div>
@@ -68,7 +68,7 @@ const Signup = () => {
 						<label className="checkbox-inline"><input type="checkbox" required /> I accept the <a href="/">Terms of Use</a> &amp; <a href="/">Privacy Policy</a></label>
 					</div>
 					<div>
-					<Button onClick={()=>setVisible(!visible)}>{visible?'Hide InfoTex':'Show InfoText'}</Button>
+						<Button onclick={() => setVisible(!visible)}>{visible ? 'Hide InfoTex' : 'Show InfoText'}</Button>
 					</div>
 					<div>
 						<Button>Signup</Button>
@@ -76,11 +76,9 @@ const Signup = () => {
 				</form>
 				<div className="text-center">Already have an account? <a href="/">Login here</a></div>
 				{visible && (
-					<div>
-					<InfoText/>
-				</div> 
+					<InfoText />
 				)}
-				
+
 			</div>
 		</div>
 

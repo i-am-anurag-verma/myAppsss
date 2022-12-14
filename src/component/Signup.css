@@ -28,14 +28,3 @@ body{
 .form-control:focus{
     background-color: skyblue;
 }
-.btn{
-    width: 100%;
-    background-color: #2ECC71;
-    color: white;
-    padding: 14px 20px;
-    margin: 20px 0;
-    cursor: pointer;
-}
-.btn:hover{
-    background-color: #2ecc98;
-}

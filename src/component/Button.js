@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './button.css'
 
 const Button = (props) => {
   return (
     <div className="form-group">
-            <button type="submit" className="btn btn-primary btn-lg" onClick={props.onClick}>{props.children}</button>
+            <button type="button" className="btn btn-primary btn-lg" onClick={props.onclick} disabled={props.isDisabled}>{props.children}</button>
         </div>
   )
 }
